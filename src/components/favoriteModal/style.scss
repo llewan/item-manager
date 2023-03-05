@@ -1,0 +1,57 @@
+.FavoriteModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.FavoriteModal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.FavoriteModal.exit {
+  opacity: 0;
+}
+
+.FavoriteModal-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-height: 90%;
+  min-height: 90%;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.FavoriteModal-header,
+.FavoriteModal-footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.FavoriteModal-title {
+  margin: 0;
+}
+
+.FavoriteModal-body {
+  flex: 1;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.item {
+
+}
+.grid {
+  display: flex;
+}

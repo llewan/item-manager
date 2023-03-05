@@ -1,0 +1,36 @@
+.Accordion {
+  border: 1px solid $border-color;
+  border-bottom-color: transparent;
+  border-radius: 4px;
+
+  &-item {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &-header {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  &-toggle {
+    margin-right: 12px;
+  }
+
+  &-title {
+    flex: 1;
+  }
+
+  &-content {
+    border-top: 1px solid $border-color;
+    padding: 16px;
+  }
+}
+
+.Accordion-item--collapsed .Accordion-content {
+  display: none;
+}
+.Accordion-item--expanded .Accordion-content {
+  display: block;
+}

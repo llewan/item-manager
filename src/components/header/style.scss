@@ -1,0 +1,31 @@
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  margin: 0;
+
+  &-favoriteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #253238;
+    position: relative;
+    border: 0;
+    padding: 0;
+    background: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+@media screen and (map-get($media, mobile)) {
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+

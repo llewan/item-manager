@@ -1,0 +1,32 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0 24px;
+  background: rgb(250 250 250 / 1);
+  border-radius: 20px;
+  height: 44px;
+
+  > svg {
+    position: absolute;
+    left: 12px;
+  }
+
+  &-input {
+    width: 100%;
+    padding: 0 16px 0 46px;
+    appearance: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 1rem;
+    border: 0;
+    height: 100%;
+  }
+}
+
+@media screen and (map-get($media, mobile)) {
+  .SearchBar {
+    margin: 0;
+  }
+}

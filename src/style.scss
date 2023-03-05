@@ -1,0 +1,47 @@
+$primary-color: #13c1ad;
+$border-color: #d1d5db;
+
+$breakpoints: (mobile: 375px, tablet: 768px);
+$media: (
+  mobile: '(max-width: #{map-get($breakpoints, mobile)})',
+  tablet: '(max-width: #{map-get($breakpoints, tablet)})',
+);
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 980px;
+  margin: 0 auto;
+
+  &-body {
+    display: flex;
+  }
+
+  &-sidebar {
+    width: 25%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (map-get($media, tablet)) {
+  .App {
+    &-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@import './components/header/style';
+@import './components/items/style';
+@import './components/item/style';
+@import './components/accordion/style';
+@import './components/favoriteModal/style';
+@import './components/searchBar/style';
